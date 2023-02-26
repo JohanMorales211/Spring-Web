@@ -21,15 +21,15 @@
         </thead>
         <tbody>
             <tr>
-                <td>Datos del Cliente</td>
-                <td th:text="${cliente.nombre}"></td>
-                <td th:text="${cliente.apellido}"></td>
-                <td th:text="${cliente.email}"></td>
+                <td>Datos del Profesor</td>
+                <td th:text="${profesor.nombre}"></td>
+                <td th:text="${profesor.apellido}"></td>
+                <td th:text="${profesor.email}"></td>
             </tr>
         </tbody>
     </table>
-    <div th:if="${vendedores.isEmpty()}">no hay vendedores en la lista!</div>
-    <table th:if="${not vendedores.isEmpty()}" class="table table-bordered">
+    <div th:if="${estudiantes.isEmpty()}">no hay estudiantes en la lista!</div>
+    <table th:if="${not estudiantes.isEmpty()}" class="table table-bordered">
 		<thead>
 			<tr>
 				<th>Nombre</th>
@@ -38,10 +38,10 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="vendedor: ${vendedores}">
-				<td th:text="${vendedor.nombre}"></td>
-				<td th:text="${vendedor.apellido}"></td>
-				<td th:text="${vendedor.email}"></td>
+			<tr th:each="estudiantes: ${estudiantes}">
+				<td th:text="${estudiantes.nombre}"></td>
+				<td th:text="${estudiantes.apellido}"></td>
+				<td th:text="${estudiantes.email}"></td>
 			</tr>
 		</tbody>
 	</table>

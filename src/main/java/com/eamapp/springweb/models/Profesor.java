@@ -1,19 +1,19 @@
 package com.eamapp.springweb.models;
 
-public class Vendedores {
+public class Profesor {
     private String nombre;
     private String apellido;
     private String email;
 
-    public Vendedores() {
+    public Profesor() {
     }
 
-    public Vendedores(String nombre, String apellido, String email) {
+    public Profesor(String nombre, String apellido, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
     }
-
+    
     public String getNombre() {
         return nombre;
     }
